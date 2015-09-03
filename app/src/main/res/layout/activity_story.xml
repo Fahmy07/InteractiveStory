@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                tools:context="com.example.fahmy.interactivestory.ui.StoryActivity">
+
+    <ImageView
+        android:id="@+id/storyImageView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/page0"/>
+
+    <TextView
+        android:id="@+id/storyTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/storyImageView"
+        android:layout_alignStart="@+id/storyImageView"
+        android:layout_below="@+id/storyImageView"
+        android:lineSpacingMultiplier="1.2"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="15dp"
+        android:text="@string/story"/>
+
+    <Button
+        android:id="@+id/choiceButton2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/white"
+        android:text="Stop and investigate"
+        android:textColor="#FF3A8AEC"/>
+
+    <Button
+        android:id="@+id/choiceButton1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/choiceButton2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/white"
+        android:text="Continue home to Earth"
+        android:textColor="#FF3A8AEC"/>
+</RelativeLayout>
